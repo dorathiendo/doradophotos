@@ -1,0 +1,27 @@
+name: Deploy and Update Domain
+
+on:
+  push:
+    branches:
+      - main  # or your default branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    # Add your deployment steps here
+    - name: Deploy to server
+      run: echo "Deploying to server..."
+
+    - name: Update Domain
+      run: |
+        echo "Updating custom domain to doradophotos.com"
+        # Add the command or script to update the domain
+        # This could be a script or a set of commands depending on your server/hosting service
+
+    # This is a placeholder step. Replace with actual steps to update the domain.
+    - name: Set custom domain
+      run: echo "Domain set to doradophotos.com"
